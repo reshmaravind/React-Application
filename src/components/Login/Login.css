@@ -1,0 +1,9 @@
+.margin-style{
+    margin-top: 30px;
+}
+
+.element-style{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
