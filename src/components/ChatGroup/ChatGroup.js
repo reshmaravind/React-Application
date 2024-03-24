@@ -9,7 +9,7 @@ const ChatScreen = () => {
     let [newMessage, setNewMessage] = useState('');
     const [inputText, setInputText] = useState('');
 
-    // Save chat data to local storage whenever messages change
+    // Save chat data to local storage
     useEffect(() => {
         localStorage.setItem('chatMessages', JSON.stringify(messages));
     }, [messages]);
@@ -22,7 +22,7 @@ const ChatScreen = () => {
             timestamp: new Date().toLocaleTimeString(),
         };
         setMessages([...messages, newMessage]);
-        setInputText(''); // Clear input field after sending message
+        setInputText('');
         setNewMessage('')
     };
 

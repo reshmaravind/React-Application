@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const navigate = useNavigate();
-    // Empty dependency array ensures this effect runs only once, similar to componentDidMount
 
     const showUserTable = () => {
         navigate('/userMgmt');

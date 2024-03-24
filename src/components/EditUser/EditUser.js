@@ -23,7 +23,6 @@ const EditUser = ({ show, handleClose, user, title, label_1, label_2, handleSave
     };
 
     const handleModalClose = () => {
-        // Reset editedUser to originalUser when modal is closed without saving
         setEditedUser(originalUser);
         handleClose();
     };

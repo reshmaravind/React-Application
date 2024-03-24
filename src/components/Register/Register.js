@@ -43,10 +43,10 @@ const Register = () => {
             const existingData = localStorage.getItem('userInfo');
             let userData = existingData ? JSON.parse(existingData) : [];
 
-            // Add the new user registration data to the array
+
             userData.push({ name, email, password });
 
-            // Store the updated array back into local storage
+
             localStorage.setItem('userInfo', JSON.stringify(userData));
             setLoggedIn(true);
         }

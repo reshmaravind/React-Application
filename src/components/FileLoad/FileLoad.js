@@ -21,7 +21,7 @@ const FileLoad = ({ show, handleClose, handleUpload }) => {
             setLabel('');
             setFile(null);
         } else {
-            alert('Please provide both a label and select a file.');
+            alert('Kindly provide a label and select a file.');
         }
     };
 

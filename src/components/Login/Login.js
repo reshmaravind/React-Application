@@ -29,7 +29,6 @@ const Login = () => {
                 setError('');
                 setLoggedIn(true);
                 localStorage.setItem('loggedUser', JSON.stringify({ email, password }))
-                // Redirect or perform further actions after successful login
             } else {
                 // Login failed
                 setError('Invalid email or password');

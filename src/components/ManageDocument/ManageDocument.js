@@ -49,7 +49,7 @@ const ManageDocument = () => {
             fileName: file.name
         };
         setSalesList([...salesList, newSale]);
-        localStorage.setItem('salesList', JSON.stringify([...salesList, newSale])); // Save updated data to local storage
+        localStorage.setItem('salesList', JSON.stringify([...salesList, newSale]));
     };
 
     return (
